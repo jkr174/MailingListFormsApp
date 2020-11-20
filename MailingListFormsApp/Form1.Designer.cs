@@ -30,37 +30,37 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grpMail = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtZip = new System.Windows.Forms.TextBox();
+            this.txtState = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.btnAccept = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.grpTime = new System.Windows.Forms.GroupBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnPause = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.txtElapsedTime = new System.Windows.Forms.TextBox();
+            this.timSeconds = new System.Windows.Forms.Timer(this.components);
             this.grpMail.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grpTime.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpMail
             // 
-            this.grpMail.Controls.Add(this.textBox5);
-            this.grpMail.Controls.Add(this.textBox4);
-            this.grpMail.Controls.Add(this.textBox3);
-            this.grpMail.Controls.Add(this.button1);
-            this.grpMail.Controls.Add(this.button2);
-            this.grpMail.Controls.Add(this.textBox2);
-            this.grpMail.Controls.Add(this.textBox1);
+            this.grpMail.Controls.Add(this.txtZip);
+            this.grpMail.Controls.Add(this.txtState);
+            this.grpMail.Controls.Add(this.txtCity);
+            this.grpMail.Controls.Add(this.btnAccept);
+            this.grpMail.Controls.Add(this.btnClear);
+            this.grpMail.Controls.Add(this.txtAddress);
+            this.grpMail.Controls.Add(this.txtName);
             this.grpMail.Controls.Add(this.label5);
             this.grpMail.Controls.Add(this.label4);
             this.grpMail.Controls.Add(this.label3);
@@ -69,63 +69,65 @@
             this.grpMail.Enabled = false;
             this.grpMail.Location = new System.Drawing.Point(12, 12);
             this.grpMail.Name = "grpMail";
-            this.grpMail.Size = new System.Drawing.Size(329, 217);
+            this.grpMail.Size = new System.Drawing.Size(329, 169);
             this.grpMail.TabIndex = 0;
             this.grpMail.TabStop = false;
             this.grpMail.Text = "Address Information";
             // 
-            // textBox5
+            // txtZip
             // 
-            this.textBox5.Location = new System.Drawing.Point(216, 100);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtZip.Location = new System.Drawing.Point(216, 100);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.Size = new System.Drawing.Size(100, 20);
+            this.txtZip.TabIndex = 4;
             // 
-            // textBox4
+            // txtState
             // 
-            this.textBox4.Location = new System.Drawing.Point(52, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtState.Location = new System.Drawing.Point(62, 100);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(90, 20);
+            this.txtState.TabIndex = 3;
             // 
-            // textBox3
+            // txtCity
             // 
-            this.textBox3.Location = new System.Drawing.Point(52, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(264, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtCity.Location = new System.Drawing.Point(62, 74);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(254, 20);
+            this.txtCity.TabIndex = 2;
             // 
-            // button1
+            // btnAccept
             // 
-            this.button1.Location = new System.Drawing.Point(52, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAccept.Location = new System.Drawing.Point(62, 126);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(75, 23);
+            this.btnAccept.TabIndex = 5;
+            this.btnAccept.Text = "&Accept";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.Location = new System.Drawing.Point(164, 126);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(216, 126);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 12;
+            this.btnClear.Text = "&Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // textBox2
+            // txtAddress
             // 
-            this.textBox2.Location = new System.Drawing.Point(52, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtAddress.Location = new System.Drawing.Point(62, 49);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(254, 20);
+            this.txtAddress.TabIndex = 1;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtName.Location = new System.Drawing.Point(62, 23);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(254, 20);
+            this.txtName.TabIndex = 0;
             // 
             // label5
             // 
@@ -172,67 +174,78 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // groupBox2
+            // grpTime
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Location = new System.Drawing.Point(347, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 217);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.grpTime.Controls.Add(this.btnExit);
+            this.grpTime.Controls.Add(this.btnPause);
+            this.grpTime.Controls.Add(this.btnStart);
+            this.grpTime.Controls.Add(this.txtElapsedTime);
+            this.grpTime.Location = new System.Drawing.Point(347, 12);
+            this.grpTime.Name = "grpTime";
+            this.grpTime.Size = new System.Drawing.Size(200, 169);
+            this.grpTime.TabIndex = 0;
+            this.grpTime.TabStop = false;
+            this.grpTime.Text = "Elapsed Time";
             // 
-            // button5
+            // btnExit
             // 
-            this.button5.Location = new System.Drawing.Point(67, 172);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(67, 126);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 15;
+            this.btnExit.Text = "E&ixt";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button4
+            // btnPause
             // 
-            this.button4.Location = new System.Drawing.Point(67, 143);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnPause.Location = new System.Drawing.Point(67, 98);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(75, 23);
+            this.btnPause.TabIndex = 14;
+            this.btnPause.Text = "&Pause";
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnStart
             // 
-            this.button3.Location = new System.Drawing.Point(67, 114);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnStart.Location = new System.Drawing.Point(67, 72);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 13;
+            this.btnStart.Text = "&Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // textBox6
+            // txtElapsedTime
             // 
-            this.textBox6.Location = new System.Drawing.Point(28, 19);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(141, 20);
-            this.textBox6.TabIndex = 10;
+            this.txtElapsedTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtElapsedTime.Location = new System.Drawing.Point(28, 19);
+            this.txtElapsedTime.Name = "txtElapsedTime";
+            this.txtElapsedTime.Size = new System.Drawing.Size(141, 29);
+            this.txtElapsedTime.TabIndex = 10;
+            this.txtElapsedTime.TabStop = false;
+            this.txtElapsedTime.Text = "00:00:00";
+            this.txtElapsedTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // timSeconds
+            // 
+            this.timSeconds.Interval = 1000;
+            this.timSeconds.Tick += new System.EventHandler(this.timSeconds_Tick);
             // 
             // frmMailingList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 258);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(568, 200);
+            this.Controls.Add(this.grpTime);
             this.Controls.Add(this.grpMail);
             this.Name = "frmMailingList";
             this.Text = "Mailing List Application";
             this.grpMail.ResumeLayout(false);
             this.grpMail.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpTime.ResumeLayout(false);
+            this.grpTime.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -240,24 +253,24 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpMail;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtZip;
+        private System.Windows.Forms.TextBox txtState;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.Button btnAccept;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.GroupBox grpTime;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnPause;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.TextBox txtElapsedTime;
+        private System.Windows.Forms.Timer timSeconds;
     }
 }
 
