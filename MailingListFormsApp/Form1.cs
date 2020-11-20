@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MailingListFormsApp
 {
-    public partial class Form1 : Form
+    public partial class frmMailingList : Form
     {
-        public Form1()
+        public frmMailingList()
         {
             InitializeComponent();
         }
