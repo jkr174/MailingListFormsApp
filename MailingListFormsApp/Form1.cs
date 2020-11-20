@@ -34,7 +34,7 @@ namespace MailingListFormsApp
         {
             btnStart.Enabled = false;
             btnExit.Enabled = false;
-            btnPause.Enabled = false;
+            btnPause.Enabled = true;
 
             lastNow = DateTime.Now;
             timSeconds.Enabled = true;
